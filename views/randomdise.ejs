@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dise</title>
+</head>
+<body>
+    <%- include("include/header.ejs") %>
+
+    <h1>Random dise no is : <%=
+
+        <!-- Math.floor(Math.random() * 6) + 1; -->
+         <!-- ranVal -->
+         diceVal
+
+    %></h1>
+
+    <!-- 'Scriptlet' tag, for control-flow, no output  -->
+
+    <% if(diceVal == 6){ %>
+
+        <h2>Well done! roll dice again..</h2>
+
+    <% } %>    
+
+    <%- include("include/footer.ejs") %>
+</body>
+</html>
